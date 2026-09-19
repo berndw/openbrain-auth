@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>OpenBrain · Zugriff freigeben</title><link rel="stylesheet" href="./style.css"></head>
+<body><main><div class="brand">OPENBRAIN</div><h1>Dein Wissen.<br>Deine Entscheidung.</h1><p>Verbinde deinen KI-Assistenten sicher mit OpenBrain.</p><p id="status" role="status" aria-live="polite">Verbindung wird geprüft …</p>
+<form id="login" hidden><label for="email">E-Mail-Adresse</label><input id="email" type="email" autocomplete="username" required><button>Anmeldelink senden</button><p>Du erhältst einen sicheren Link per E-Mail. Es ist kein Passwort nötig.</p></form>
+<section id="consent" hidden><h2>Zugriff erlauben?</h2><dl><dt>KI-Anwendung</dt><dd id="client"></dd><dt>Rückkehradresse</dt><dd id="redirect"></dd><dt>Angefragte Berechtigungen</dt><dd id="scope"></dd></dl><p>Mit deiner Zustimmung kann diese Anwendung über OpenBrain Gedanken lesen, suchen und speichern sowie die Harold-Funktionen nutzen. Die Freigabe gilt für dein angemeldetes Konto.</p><div class="actions"><button id="approve">Zugriff erlauben</button><button id="deny" class="secondary">Ablehnen</button></div></section>
+<button id="logout" class="secondary" hidden>Abmelden</button><footer>OAuth 2.1 · Anmeldung und Zustimmung über Supabase</footer></main><script type="module" src="./app.js"></script></body></html>
+
